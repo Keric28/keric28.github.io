@@ -44,7 +44,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 $.ajax({
   url: "https://www.bungie.net/platform/GroupV2/379880/Members/",
   headers: {
-    "074a634dcbb84af181344c647bdc0d18": apiKey
+    "X-API-Key": 074a634dcbb84af181344c647bdc0d18
   }
 }).done(function(json) {
   var members = json.Response.results;
