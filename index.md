@@ -41,11 +41,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 ### Test Pull
 
 // get list of members and populate roster table
-$.ajax({
-  url: "https://www.bungie.net/platform/GroupV2/379880/Members/",
-  headers: {
-    "X-API-Key": 074a634dcbb84af181344c647bdc0d18
-  }
+$.ajax({url: "https://www.bungie.net/platform/GroupV2/379880/Members/", headers: {"X-API-Key": 074a634dcbb84af181344c647bdc0d18}
 }).done(function(json) {
   var members = json.Response.results;
   console.log('Member list:', members);
