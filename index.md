@@ -35,3 +35,19 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+
+
+### Test Pull
+
+// get list of members and populate roster table
+$.ajax({
+  url: "https://www.bungie.net/platform/GroupV2/379880/Members/",
+  headers: {
+    "X-API-Key": apiKey
+  }
+}).done(function(json) {
+  var members = json.Response.results;
+  console.log('Member list:', members);
+  listMembers(members);
+});
